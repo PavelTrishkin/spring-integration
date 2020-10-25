@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/sells_db?serverTimezone=UTC
+    username: root
+    password: root
+  thymeleaf:
+    encoding: UTF-8
+logging:
+  level:
+    org.springframework.integration: DEBUG
+server:
+  port: 8090
