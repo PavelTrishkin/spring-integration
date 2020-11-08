@@ -21,14 +21,16 @@ public class Sell {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = SEQUENCE_NAME)
     @SequenceGenerator(name = SEQUENCE_NAME, sequenceName = SEQUENCE_NAME, allocationSize = 1)
+    @Column(name = "sell_id")
     private Long id;
 
+    @Column(name = "created_fld")
     private LocalDateTime created;
 
     @Column(name = "order_id_fld")
     private Long orderId;
 
-    @Column(name = "user_name_fld")
+    @Column(name = "username_fld")
     private String userName;
 
     @Column(name = "product_title_fld")
