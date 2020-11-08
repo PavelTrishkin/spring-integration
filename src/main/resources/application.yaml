@@ -1,16 +1,15 @@
+server:
+  hostname: localhost
+  port: ${PORT:8090}
 spring:
   jpa:
     hibernate:
       ddl-auto: validate
     show-sql: true
+  flyway:
+    baseline-on-migrate: true
   datasource:
-    url: jdbc:mysql://localhost:3306/sells_db?serverTimezone=UTC
-    username: root
-    password: root
-  thymeleaf:
-    encoding: UTF-8
-logging:
-  level:
-    org.springframework.integration: DEBUG
-server:
-  port: 8090
+    driver-class-name: org.postgresql.Driver
+    url: ${DATABASE_PATH_INTEGRATE_MODULE}
+    username: ${DATABASE_USER_INTEGRATE_MODULE}
+    password: ${DATABASE_PASSWORD_INTEGRATE_MODULE}

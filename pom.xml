@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>ru.gb.trishkin</groupId>
 	<artifactId>spring-integration</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>spring-integration</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -41,9 +41,14 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.21</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.4.22.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.16</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
